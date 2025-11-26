@@ -160,15 +160,15 @@ body {
     display: block;
     position: absolute;
     right: 0;
-    backdrop-filter: blur(10px);
     top: 100%;
-    z-index: 1;
-    background-color: #77777797;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.85);
     padding: 20px;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
- }
+    min-width: 320px;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 15px;
+}
 
 
  table {
@@ -177,6 +177,27 @@ body {
  th, td {
     color: #ffffff;
  }
+
+#carrito table {
+  background: transparent;
+}
+
+#carrito th, 
+#carrito td {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .submenu:hover #carrito {
+    position: static;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 10px;
+  }
+}
+
  .borrar {
     background-color: #EF8700;
    border-radius: 50%;
@@ -624,7 +645,14 @@ body {
     justify-content: center;
   }
 }
+  .footer-content {
+    padding: 20px;
+  }
 
+  .footer-copy {
+    padding-top: 20px;
+  }
+}
 
 
 
